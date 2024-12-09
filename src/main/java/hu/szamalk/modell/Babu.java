@@ -12,7 +12,6 @@ public class Babu {
         }
         this.szin = szin;
     }
-
     public Babu(String szin) {
         this(1,szin);
     }
