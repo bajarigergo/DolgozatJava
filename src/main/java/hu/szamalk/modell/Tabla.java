@@ -50,7 +50,23 @@ public class Tabla {
         }
         return i>=8;
     }
-    public int UresOszlopokSzama(){return 0;}
-    public int UresSorokSzama(){return 0;}
+    public int UresOszlopokSzama(){
+        int gyujto = 0;
+        for (int i = 0; i < 8; i++) {
+            if(UresOszlop(i)){
+                gyujto++;
+            }
+        }
+        return gyujto;
+    }
+    public int UresSorokSzama(){
+        int gyujto = 0;
+        for (int i = 0; i < 8; i++) {
+            if(UresSor(i)){
+                gyujto++;
+            }
+        }
+        return gyujto;
+    }
 }
 
