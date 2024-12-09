@@ -1,6 +1,9 @@
 package hu.szamalk.modell;
 
+import java.util.Random;
+
 public class Tabla {
+    Random rnd = new Random();
     private String UresCella;
     private String[][] T;
 
@@ -12,7 +15,16 @@ public class Tabla {
         }
     }
 
-    public void Elhelyez(){}
+    public void Elhelyez(int N){
+        for (int i = 0; i < N; i++) {
+            int randomI = rnd.nextInt(8);
+            int randomJ = rnd.nextInt(8);
+            if(T[randomI][randomJ]!="K"){
+                T[randomI][randomJ]="K";
+            }else{
+            i--;}
+        }
+    }
     public void FajlbaIr(){}
     public void Megjelenit(){
         String kimenet="";
