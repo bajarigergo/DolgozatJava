@@ -1,5 +1,6 @@
 package hu.szamalk;
 
+import hu.szamalk.modell.LogikaiJatek;
 import hu.szamalk.modell.Tabla;
 
 import java.io.File;
@@ -8,7 +9,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-
+        LogikaiJatek j1 = new LogikaiJatek(3);
+        LogikaiJatek j2 = new LogikaiJatek(10);
 
 //        Tabla t = new Tabla("#");
 //        System.out.println("4. feladat: az üres tábla:");
