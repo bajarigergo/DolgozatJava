@@ -5,11 +5,15 @@ public class Babu {
     private String szin;
 
     public Babu(int ero, String szin) {
-        this.ero = ero;
+        if ((1<=ero) && (ero<=9)){
+            this.ero = ero;
+        }else{
+            this.ero=1;
+        }
         this.szin = szin;
     }
 
     public Babu(String szin) {
-        this.szin = szin;
+        this(1,szin);
     }
 }
