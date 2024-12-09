@@ -36,8 +36,20 @@ public class Tabla {
         }
         System.out.println(kimenet);
     }
-    public void UresOszlop(){}
-    public void UresSor(){}
+    public boolean UresOszlop(int oszlopszam){
+        int i = 0;
+        while ((i < 8) && (T[i][oszlopszam] == UresCella)){
+            i++;
+        }
+        return i>=8;
+    }
+    public boolean UresSor(int sorszam){
+        int i = 0;
+        while ((i < 8) && (T[sorszam][i] == UresCella)){
+            i++;
+        }
+        return i>=8;
+    }
     public int UresOszlopokSzama(){return 0;}
     public int UresSorokSzama(){return 0;}
 }
