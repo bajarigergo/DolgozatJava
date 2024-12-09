@@ -12,12 +12,21 @@ public class Tabla {
         }
     }
 
-    private void Elhelyez(){}
-    private void FajlbaIr(){}
-    private void Megjelenit(){}
-    private void UresOszlop(){}
-    private void UresSor(){}
-    private int UresOszlopokSzama(){return 0;}
-    private int UresSorokSzama(){return 0;}
+    public void Elhelyez(){}
+    public void FajlbaIr(){}
+    public void Megjelenit(){
+        String kimenet="";
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                kimenet+=T[i][j];
+            }
+            kimenet +="\n";
+        }
+        System.out.println(kimenet);
+    }
+    public void UresOszlop(){}
+    public void UresSor(){}
+    public int UresOszlopokSzama(){return 0;}
+    public int UresSorokSzama(){return 0;}
 }
 
