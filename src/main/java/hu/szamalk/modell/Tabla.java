@@ -25,7 +25,16 @@ public class Tabla {
             i--;}
         }
     }
-    public void FajlbaIr(){}
+    public String FajlbaIr(){
+        String kimenet="";
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                kimenet+=T[i][j];
+            }
+            kimenet +="\n";
+        }
+        return kimenet;
+    }
     public void Megjelenit(){
         String kimenet="";
         for (int i = 0; i < 8; i++) {
