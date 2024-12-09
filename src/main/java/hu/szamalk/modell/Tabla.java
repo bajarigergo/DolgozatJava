@@ -10,7 +10,6 @@ public class Tabla {
         for (int i = 0; i < 8; i++) {
             T [i] = new String[]{UresCella,UresCella,UresCella,UresCella,UresCella,UresCella,UresCella,UresCella};
         }
-
     }
 
     private void Elhelyez(){}
